@@ -132,7 +132,7 @@ if driver == "venstre":
                 pen.write("Player A: {}  Player B: {}".format(score_a, score_b), align="center", font=("Courier", 24, "normal"))
                 ball.goto(0, 0)
                 ball.dx *= -1
-                if score_a == 20:
+                if score_a == 10:
                     break
 
             elif ball.xcor() < -350:
@@ -141,7 +141,7 @@ if driver == "venstre":
                 pen.write("Player A: {}  Player B: {}".format(score_a, score_b), align="center", font=("Courier", 24, "normal"))
                 ball.goto(0, 0)
                 ball.dx *= -1
-                if score_b == 20:
+                if score_b == 10:
                     break
 
             # Paddle and ball collisions
